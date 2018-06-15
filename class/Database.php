@@ -1,17 +1,12 @@
 <?php
 class Database
 {
-	private $host = "localhost";
-	private $user = "root";
-	private $password = "root";
-	private $dbname = "voetbal";
 
-/**	
 private $host = "localhost";
 	private $user = "vaneenoo_sam";
 	private $password = "Eu5PoceNeV";
 	private $dbname = "vaneenoo_sam";
- */
+ 
 
 
 	# @object, The PDO object
