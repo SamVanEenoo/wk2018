@@ -1,1 +1,620 @@
+@font-face {
+  font-family: "Sensei";
+  src: url('../fonts/sensei.otf');
+}
 
+html,
+body {
+  height: 100%;
+}
+
+body{
+  background: url(../img/background.jpg) center top;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Avenir Next";
+}
+
+.rank-icon {
+  height: 20px;
+}
+
+.winner,
+.winner:hover {
+  border: 3px solid #e8ce3c;
+  color: #e8ce3c;
+}
+
+.content {
+  background: #FFF;
+  min-height: 100%;
+}
+
+.bet-wrapper {
+  background: #FFF;
+}
+
+#navhead {
+  background: #000;
+}
+
+h3 {
+  background-color: #555
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+ 
+#passwordbackground1, 
+#passwordbackground2, 
+#passwordbackground3,
+#passwordbackground4 {
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  float: left;
+  font-size: 11px;
+  color: #555;
+}
+
+#passwordbackground1, 
+#passwordbackground2, 
+#passwordbackground3 {
+  background: #DDD;
+  width: 26%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 5px;
+  margin-top: 5px;
+}
+
+#passwordbackground4 {
+  width: 14%;
+  height: 11px;
+  margin-left: 2%;
+  color: #7f94a8;
+}
+
+#passwordbackground1 {
+  background: #ff7677;
+}
+
+#passwordbackground2 {
+  background: #ffc664;
+}
+
+#passwordbackground3 {
+  background: #4ccca4;
+}
+
+#passwordscore2,
+#passwordscore3 {
+  height: 5px;
+  background: #CCC;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.model-header {
+  border-radius: 5px;
+  border-bottom: none !important;
+}
+
+#message {
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+#close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  float: right;
+  cursor: pointer;
+}
+
+#close-modal:hover {
+  color: #777;
+}
+
+#messageModal{
+  background: rgba(0,0,0,0.36);
+}
+
+.bg-light {
+  background: #FFF !important;
+}
+
+.transaction {
+  background: #FFF;
+  box-shadow: 0 0 2px 0 #CCC;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.transaction:not(:last-child){
+  margin-bottom: 30px;
+}
+
+#signupWrapper {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.signupInput {
+  margin-bottom: 20px;
+}
+
+#sidebar,
+#signup {
+  background: #FFF;
+  box-shadow: 0 0 2px 0 #CCC;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+#signup {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  padding: 60px;
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0.64);
+}
+
+#signupForm {
+  max-width: 300px;
+  width: 100%;
+  margin: 30px auto;
+}
+
+#signupBtn,
+#loginBtn {
+  width: 100% !important;
+}
+
+#signupBtn:hover, 
+#loginBtn:hover {
+  width: 100% !important;
+}
+
+#signupName {
+  margin-bottom: 20px;
+}
+
+.round {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  float:left;
+}
+
+.kbc {
+  background: #41AEEE;
+}
+
+.vdk {
+  background: #EC6B37;
+}
+
+.user-color {
+  background: #00AA00;
+}
+
+.round .picture {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  box-shadow: 0 0 2px 0 #000;
+}
+
+.transaction .title-head .title,
+.transaction .title-head .value {
+  margin-top: 28px;
+}
+
+.transaction .title-head .title {
+  font-size: 1.5em;
+}
+
+#transaction .title-head .title {
+  font-size: 1em;
+}
+
+.transaction .title-head .value {
+  text-align: right;
+  font-size: 1.5em;
+}
+
+.transaction .title-head .negative {
+  color: #EE5E62;
+}
+
+.transaction .title-head .positive {
+  color: #62D6AB;
+}
+
+.navbar-brand {
+  font-family: "Sensei" !important;
+  font-size: 28px;
+}
+
+
+
+
+
+/* Bootstrap fixes */
+body{
+  background: url(../img/background.jpg) center top #244703;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#navhead{
+  border-radius: 0;
+}
+
+.title {
+  color: #8d0a0f;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+}
+
+.form-horizontal {
+  margin-top: 15px;
+}
+
+.nav li a {
+  font-weight: bold;
+}
+
+#navfooter{
+  background: #000;
+  border-radius: 0;
+  margin-bottom: 0px;
+  color: #DDD;
+  padding-bottom: 15px;
+  margin-top: 30px;
+}
+
+#navfooter .container {
+  min-height: 150px;
+}
+
+#navfooter a {
+  color: #66afe9;
+  text-decoration: none;
+}
+#navfooter a:hover,
+#navfooter a:focus {
+  color: #FFF;
+  text-decoration: none;
+}
+#navfooter a:focus {
+  color: #CCC;
+  text-decoration: none;
+  outline: 0;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #FFF;
+  text-decoration: none;
+}
+a:focus {
+  color: #333;
+  text-decoration: none;
+  outline: 0;
+}
+/* End bootstrap fixes */
+
+.btn-samlet {
+  color: #FFF;
+  background-color: #446300;
+  border-color: #446300;
+  margin-right: 15px;
+}
+.btn-samlet:focus,
+.btn-samlet.focus {
+  color: #EEE;
+  background-color: #60870A;
+  border-color: #60870A;
+}
+.btn-samlet:hover {
+  color: #EEE;
+  background-color: #60870A;
+  border-color: #60870A;
+}
+
+.btn-selected {
+  color: #FFF;
+  background-color: #8d0a0f;
+  border-color: #8d0a0f;
+  margin-right: 15px;
+}
+
+.btn-selected:focus,
+.btn-selected.focus {
+  color: #EEE;
+  background-color: #AC232A;
+  border-color: #AC232A;
+}
+
+.btn-selected:hover {
+  color: #EEE;
+  background-color: #AC232A;
+  border-color: #AC232A;
+}
+
+.btn-late {
+  color: #FFF;
+  background-color: #222;
+  border-color: #222;
+  margin-right: 15px;
+}
+
+.btn-late:hover {
+  color: #FFF;
+  background-color: #222;
+  border-color: #222;
+}
+
+.btn-late:focus,
+.btn-late.focus {
+  color: #EEE;
+  background-color: #333;
+  border-color: #333;
+}
+
+.btn-edit {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.asterix {
+  color: #AA0000;
+}
+
+.info {
+  border: 1px solid #000;
+  box-shadow: 2px 2px 1px 0px #333;
+  color: #000;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.info-title {
+  padding-bottom: 5px
+}
+
+.alert-default {
+  margin: 15px 0px;
+  border: 1px solid #000;
+  box-shadow: 1px 1px 1px 0px #333;
+  color: #000;
+}
+
+#btn-logout {
+  margin-left: -15px;
+}
+
+#alert {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#add-product,
+#edit-product {
+  float: right;
+}
+
+.form-title {
+  font-weight: bold;
+}
+
+.userKlassement {
+  background: #8d0a0f;
+  border: 1px solid #8d0a0f;
+  color: #FFF;
+}
+
+.payed {
+  background: #EAEAEA;
+  border: 1px solid #DDD;
+}
+
+.notpayed {
+  background: #FAFAFA;
+  border: 1px solid #EEE;
+}
+
+.day {
+  background: #111;
+  border: 1px solid #000;
+  color: #FFF;
+  height: 50px;
+  font-size: 16px;
+  padding: 15px 0px;
+}
+
+.datumHeader {
+  margin-top: 15px;
+  padding: 7px 12px 5px;
+  background-color: #333;
+  color: #AAA;
+  font-weight: bold;
+}
+
+.datum {
+  margin: 23px 0px 0px 0px;
+  text-align: center;
+}
+
+.ploeg {
+  margin: 23px 0px 0px 0px;
+  text-align: center;
+}
+
+.btn-bet {
+  margin: 10px 0px;
+}
+
+.number,
+.name,
+.points {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.number,
+.points {
+  text-align: right;
+}
+
+.red {
+  font-weight: bold;
+}
+
+#twitter-widget-0 { 
+  width: 100% !important; 
+}
+
+.userResult{
+  background: #FFF;
+  border: 1px solid #000;
+}
+
+.userInner{
+  background: #FFF;
+  padding: 10px;
+  color: #000;
+  display: none;
+}
+
+.userTitle{
+  font-weight: bold;
+  border-bottom: 1px solid #777;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.userShowHide{
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.userOdd{
+  padding-top: 10px;
+}
+
+.poule{
+  background: #337ab7;
+  color: #FFF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 3px solid #337ab7;
+  margin-bottom: 30px;
+}
+
+.pouleTitle {
+  font-weight: bold;
+}
+
+.pouleContent{
+  background: #FFF;
+  color: #000; 
+}
+
+.winner,
+.winner:hover {
+  border: 3px solid #e8ce3c;
+  color: #e8ce3c;
+}
+
+.btn-winner,
+.btn-winner:hover,
+.btn-winner:focus,
+.btn-winner.focus{
+  color: #FFF;
+  background-color: #7e7026;
+  border-color: #7e7026;
+  margin-right: 15px;
+}
+
+.table_team-name {
+  width: 30%;
+}
+
+.table_team-played {
+  width: 7%;  
+  text-align: right;
+}
+
+.table_team-won {
+  width: 7%;  
+  text-align: right;
+}
+
+.table_team-drawn {
+  width: 7%;  
+  text-align: right;
+}
+
+.table_team-lost {
+  width: 7%;
+  text-align: right;
+}
+
+.table_team-for {
+  width: 7%;
+  text-align: right;
+}
+
+.table_team-against {
+  width: 7%;
+  text-align: right;
+}
+
+.table_team-goal-diff {
+  width: 14%; 
+  text-align: right;
+}
+
+.table_team-points {
+  width: 7%;
+  text-align: right;
+}
+
+.group-container {
+  margin-top: 30px;
+}
+
+.team-code,
+.btn-secondary,
+.match-row {
+  display: none;
+}
+
+.section--content {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content-container {
+ background: #FFF; 
+ padding: 30px 30px 30px 45px; 
+ margin-top: -30px;"
+}
