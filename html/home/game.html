@@ -1,1 +1,13 @@
-
+<div class="row item">
+  <div class="col-xs-12 col-sm-3 col-md-1 datum">{{tijd}}</div>
+  <div class="hidden-sm hidden-xs col-md-5 ploeg">{{ploeg1}} {{score1}} - {{score2}} {{ploeg2}}</div>
+  <div class="col-xs-12 col-sm-3 col-md-2">
+    <div id="odd1-{{wedstrijdid}}" class="btn btn-bet btn-block btn-sm btn-samlet {{class1}}" odd-id="odd1" wedstrijd-id="{{wedstrijdid}}">{{odd1}}<br/ >{{ploeg1}}</div>
+  </div>
+  <div class="col-xs-12 col-sm-3 col-md-2">
+	<div id="oddx-{{wedstrijdid}}" class="btn btn-bet btn-block btn-sm btn-samlet {{classx}}" odd-id="oddx" wedstrijd-id="{{wedstrijdid}}">{{oddx}}<br />Draw</div>
+  </div>
+  <div class="col-xs-12 col-sm-3 col-md-2">
+	<div id="odd2-{{wedstrijdid}}" class="btn btn-bet btn-block btn-sm btn-samlet {{class2}}" odd-id="odd2" wedstrijd-id="{{wedstrijdid}}">{{odd2}}<br/ >{{ploeg2}}</div>
+  </div>
+</div>
